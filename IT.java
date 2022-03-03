@@ -1,9 +1,8 @@
 public class IT extends Personal{
     public double Salary;
-    public IT(String name,double s){
-        super(name);
+    public IT(double s){
+     
         this.Salary=s;
-       
     };
 
     @Override
