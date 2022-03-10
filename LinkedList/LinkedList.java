@@ -24,9 +24,18 @@ public class LinkedList {
     head = currentNode;
   }
 
-  public void insertAt(Node newNode,int position){
-    
-  }
+  public void insertAt(Node newNode, int position) {
+    Node currentNode = newNode;
+    if (position < 1) {
+      currentNode.next = this.head;
+      this.head = currentNode;
+    }
+    if (this.tail == null) {
+      this.tail = currentNode;
+    }
+    this.size++;
+    return;
+  };
 
   public void printList() {
     Node currentNode = head;
