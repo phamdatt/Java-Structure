@@ -1,8 +1,13 @@
 public class Node {
 
-  public int data;
+  public Student student;
+  public Node next;
 
-  public Node(int n) {
-    this.data = n;
+  public Node(Student st) {
+    this.student = st;
+    this.next = null;
+  }
+  public void printData(){
+    student.printInfo();
   }
 }
